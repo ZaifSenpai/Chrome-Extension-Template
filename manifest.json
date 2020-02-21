@@ -30,5 +30,21 @@
         "storage",
         "tabs"
     ],
+    "commands": {
+        "next": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+1",
+                "mac": "Command+Shift+1"
+            },
+            "description": "Next"
+        },
+        "cancel": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+2",
+                "mac": "Command+Shift+2"
+            },
+            "description": "Cancel"
+        }
+    },
     "author": "Zaif Senpai"
 }
