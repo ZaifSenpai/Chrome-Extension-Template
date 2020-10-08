@@ -6,3 +6,11 @@ chrome.commands.onCommand.addListener(function (command) {
         // do something
     }
 });
+
+chrome.runtime.onMessage.addListener((request, sender, response) => {
+    if (request.m === "start") {
+        console.log("Started");
+    }
+
+    response && response();
+});
