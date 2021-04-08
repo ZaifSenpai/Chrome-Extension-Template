@@ -1,3 +1,20 @@
+$(document).ready(()=>{
+    toastr["success"]("Content script inserted", "Ext");
+
+    Swal.fire({
+        title: 'Are you sure?',
+        html: "<b>Do you want to perform this action now?</b>",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Yes!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            toastr["info"]("You pressed Yes!", "Ext");
+        }
+    });
+});
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));

@@ -28,13 +28,16 @@
     "content_scripts": [
         {
             "matches": [
-                "http://*.google.com/*"
+                "https://www.google.com/*"
             ],
             "css": [
+                "css/toastr.min.css",
                 "css/contentStyle.css"
             ],
             "js": [
                 "js/jquery.js",
+                "js/toastr.min.js",
+                "js/sweetalert.min.js",
                 "js/jquery.simulate.js",
                 "js/arrive.min.js",
                 "js/contentScript.js"
