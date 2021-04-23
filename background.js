@@ -1,8 +1,10 @@
 chrome.commands.onCommand.addListener(function (command) {
     if (command === "next") {
         // do something
+        console.log("Next command");
     } else if (command === "cancel") {
         // do something
+        console.log("Cancel command");
     }
 });
 
