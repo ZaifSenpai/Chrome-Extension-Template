@@ -1,7 +1,7 @@
 @ECHO OFF
 
 if exist build rmdir /s /q build
-if not exist build mkdir build
+mkdir build
 
 set /p "name=Enter name of extension: "
 set /p "vr=Enter version: v"
