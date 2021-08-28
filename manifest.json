@@ -7,20 +7,20 @@
         "service_worker": "background.js"
     },
     "action": {
-        "default_popup": "popup.html",
-        "default_title": "Chrome Extension Template",
+        "default_popup": "html/popup.html",
+        "default_title": "Popup",
         "default_icon": {
-            "16": "images/logo_16.png",
-            "32": "images/logo_32.png",
-            "48": "images/logo_48.png",
-            "128": "images/logo_128.png"
+            "16": "res/images/logo_16.png",
+            "32": "res/images/logo_32.png",
+            "48": "res/images/logo_48.png",
+            "128": "res/images/logo_128.png"
         }
     },
     "icons": {
-        "16": "images/logo_16.png",
-        "32": "images/logo_32.png",
-        "48": "images/logo_48.png",
-        "128": "images/logo_128.png"
+        "16": "res/images/logo_16.png",
+        "32": "res/images/logo_32.png",
+        "48": "res/images/logo_48.png",
+        "128": "res/images/logo_128.png"
     },
     "content_scripts": [
         {
