@@ -1,0 +1,13 @@
+body {
+    padding: 10px;
+}
+
+hr {
+    width: 100%;
+    border-bottom: 2px solid rgba(12, 162, 232, 1);
+}
+
+.parent-center {
+    display: grid;
+    place-items: center;
+}

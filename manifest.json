@@ -3,6 +3,7 @@
     "version": "1.0",
     "description": "Description",
     "manifest_version": 3,
+    "options_page": "html/options.html",
     "background": {
         "service_worker": "background.js"
     },
