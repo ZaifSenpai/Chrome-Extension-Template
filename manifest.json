@@ -9,7 +9,7 @@
     },
     "action": {
         "default_popup": "html/popup.html",
-        "default_title": "Popup",
+        "default_title": "Chrome Extension Template",
         "default_icon": {
             "16": "res/images/logo_16.png",
             "32": "res/images/logo_32.png",
