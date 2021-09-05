@@ -18,7 +18,7 @@ xcopy css "%bf%\css\" /E/I
 xcopy res "%bf%\res\" /E/I
 
 pushd build
-tar -cf "%fn%.tar" "%fn%"
+tar -acf "%fn%.zip" "%fn%"
 ren "%fn%" "%fn% min"
 pushd "%fn% min"
 
@@ -40,7 +40,7 @@ for /f "delims=" %%x in ('dir /b') do (
 )
 popd
 popd
-tar -cf "%fn% min.tar" "%fn% min"
+tar -acf "%fn% min.zip" "%fn% min"
 
 rmdir /s /q "%fn% min"
 
