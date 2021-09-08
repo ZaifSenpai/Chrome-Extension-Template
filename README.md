@@ -1,6 +1,8 @@
 ## Chrome-Extension-Template
 Simple template for Google Chrome Extension
 
+[![wakatime](https://wakatime.com/badge/github/ZaifSenpai/Chrome-Extension-Template.svg)](https://wakatime.com/badge/github/ZaifSenpai/Chrome-Extension-Template)
+
 - - -
 #### Using batch scripts
 
