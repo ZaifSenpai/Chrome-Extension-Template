@@ -1,5 +1,5 @@
 ## Chrome-Extension-Template
-Simple template for Google Chrome Extension
+Simple Manifest V3 Boilerplate for Google Chrome Extension development project
 
 [![wakatime](https://wakatime.com/badge/github/ZaifSenpai/Chrome-Extension-Template.svg)](https://wakatime.com/badge/github/ZaifSenpai/Chrome-Extension-Template)
 
