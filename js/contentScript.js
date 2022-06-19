@@ -34,7 +34,7 @@
     // });
   });
 
-  runtime.onMessage((message, sender, sendResponse) => {
+  runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.m === "start") {
       // Todo
       sendResponse();
