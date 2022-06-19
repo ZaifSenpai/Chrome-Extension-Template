@@ -1,23 +1,38 @@
-(function () {
-    chrome.commands.onCommand.addListener(function (command) {
-        if (command === "next") {
-            // do something
-            console.log("Next command");
-        } else if (command === "cancel") {
-            // do something
-            console.log("Cancel command");
-        }
+/*!
+ * <ADD COPYRIGHT DETAILS>
+ */
+
+(function (cxt) {
+  const runtime = cxt.chrome.runtime;
+  const commands = cxt.chrome.commands;
+  // const storage = cxt.chrome.storage;
+  // const tabs = cxt.chrome.tabs;
+  // const windows = cxt.chrome.windows;
+  // const contextMenus = cxt.chrome.contextMenus;
+  // const action = cxt.chrome.action;
+
+  // const local = storage.local; // use local.set() and local.get()
+
+  commands &&
+    commands.onCommand.addListener(function (command) {
+      if (command === "next") {
+        // do something
+        console.log("Next command");
+      } else if (command === "cancel") {
+        // do something
+        console.log("Cancel command");
+      }
     });
 
-    chrome.runtime.onMessage.addListener((request, sender, response) => {
-        if (request.m === "start") {
-            console.log("Started");
+  runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if (message.m === "start") {
+      console.log("Started");
 
-            response && response();
-        } else if (request.m === "getTabId") {
-            response({tabId: sender.tab.id});
-        } else {
-            response && response();
-        }
-    });
-})();
+      sendResponse();
+    } else if (message.m === "getTabId") {
+      sendResponse({ tabId: sender.tab.id });
+    } else {
+      sendResponse();
+    }
+  });
+})(this);
