@@ -48,9 +48,6 @@
         "storage",
         "tabs"
     ],
-    "host_permissions": [
-        "https://www.google.com/*"
-    ],
     "commands": {
         "next": {
             "suggested_key": {

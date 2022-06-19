@@ -13,6 +13,7 @@
 
   // const local = storage.local; // use local.set() and local.get()
 
+  // Configure commands in manifest.commands
   commands &&
     commands.onCommand.addListener(function (command) {
       if (command === "next") {

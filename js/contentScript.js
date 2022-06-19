@@ -6,15 +6,15 @@
   const window = cxt.window;
   const document = cxt.document;
   const $ = cxt.$;
+  const storage = cxt.chrome.storage;
   // const runtime = cxt.chrome.runtime;
   // const commands = cxt.chrome.commands;
-  // const storage = cxt.chrome.storage;
   // const tabs = cxt.chrome.tabs;
   // const windows = cxt.chrome.windows;
   // const contextMenus = cxt.chrome.contextMenus;
   // const action = cxt.chrome.action;
 
-  // const local = storage.local; // use local.set() and local.get()
+  const local = storage.local; // use local.set() and local.get()
 
   $(() => {
     // toastr["success"]("Content script inserted", "Ext");
@@ -32,6 +32,15 @@
     //     toastr["info"]("You pressed Yes!", "Ext");
     //   }
     // });
+  });
+
+  runtime.onMessage((message, sender, sendResponse) => {
+    if (message.m === "start") {
+      // Todo
+      sendResponse();
+    } else {
+      sendResponse();
+    }
   });
 
   //
