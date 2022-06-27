@@ -36,7 +36,7 @@
                 "js/jquery.js",
                 "js/toastr.min.js",
                 "js/sweetalert.min.js",
-                "js/jquery.simulate.js",
+                "js/simulate.min.js",
                 "js/arrive.min.js",
                 "js/contentScript.js"
             ],
